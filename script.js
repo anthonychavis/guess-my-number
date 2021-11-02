@@ -11,8 +11,12 @@ const secretBoxWidth = width =>
   (document.querySelector('.number').style.width = width);
 const secretBoxNum = num =>
   (document.querySelector('.number').textContent = num);
-const bodyBG = color =>
-  (document.querySelector('body').style.backgroundColor = color);
+const bodyBG = color => {
+  document.querySelector('*').style.backgroundColor = color;
+  document.querySelector('section').style.backgroundColor = color;
+  document.querySelector('.right').style.backgroundColor = color;
+  document.querySelector('main').style.backgroundColor = color;
+};
 const scoreUpdate = score =>
   (document.querySelector('.score').textContent = score);
 
@@ -24,10 +28,13 @@ document.querySelector('.check').addEventListener('click', function () {
   if (!guess) {
     displayMessage('⛔ No number');
 
+    // guess too high
+  } else if (guess > 20) {
+    displayMessage('⛔ Invalid input; value out of range!');
     // player wins
   } else if (guess === secretNumber) {
     displayMessage('🎉 Correct Number!');
-    bodyBG('#60b347');
+    bodyBG('#ff8500');
     secretBoxWidth('30rem');
     secretBoxNum(secretNumber);
 
@@ -57,8 +64,8 @@ document.querySelector('.again').addEventListener('click', function () {
   displayMessage('Start guessing...');
   scoreUpdate(score);
   secretBoxNum('?');
-  bodyBG('#222');
-  secretBoxWidth('15rem');
+  bodyBG('#50244a');
+  secretBoxWidth('auto');
 
   document.querySelector('.guess').value = ' ';
 });
