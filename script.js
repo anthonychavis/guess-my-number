@@ -34,7 +34,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // player wins
   } else if (guess === secretNumber) {
     displayMessage('🎉 Correct Number!');
-    bodyBG('#fa8100');
+    bodyBG('#e00b5c');
     secretBoxWidth('30rem');
     secretBoxNum(secretNumber);
 
