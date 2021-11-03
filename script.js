@@ -34,7 +34,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // player wins
   } else if (guess === secretNumber) {
     displayMessage('🎉 Correct Number!');
-    bodyBG('#e00b5c');
+    bodyBG('hsl(337, 91%, 46%)');
     secretBoxWidth('30rem');
     secretBoxNum(secretNumber);
 
@@ -64,7 +64,7 @@ document.querySelector('.again').addEventListener('click', function () {
   displayMessage('Start guessing...');
   scoreUpdate(score);
   secretBoxNum('?');
-  bodyBG('#50244a');
+  bodyBG('hsl(308, 38%, 23%)');
   secretBoxWidth('auto');
 
   document.querySelector('.guess').value = ' ';
