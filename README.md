@@ -27,7 +27,7 @@ The goal of the project was primarily to practice javascript functionality.
 
 ## Illustration
 
-![Example of mobile portrait](./img/guessmynumber.jpg)
+![Example of mobile portrait](./img/guessnumber.png)
 
 ## Sources
 
