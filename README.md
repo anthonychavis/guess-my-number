@@ -1,5 +1,3 @@
-2 player, button-based game
-
 # Guess My Number
 
 1 player, button-based game
@@ -29,7 +27,7 @@ The goal of the project was primarily to practice javascript functionality.
 
 ## Illustration
 
-![Example of mobile portrait](./images/guessmynumber.jpg)
+![Example of mobile portrait](./img/guessmynumber.jpg)
 
 ## Sources
 
